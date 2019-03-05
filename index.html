@@ -5,6 +5,8 @@
     <title>Ben Yitzhaki | Software Engineer | בן יצחקי</title>
     <meta name="description" content="Software Engineer, Ben Yitzhaki" />
     <meta name="keywords" content="Ben Yitzhaki, Web Development, בן יצחקי" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
     <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
@@ -13,16 +15,30 @@
             margin:15px auto;
             text-align:center;
         }
+        .profile {
+            height: 75px;
+            border: 2px solid #330a54;
+            padding: 5px;
+            width: 75px;
+            border-radius: 100%;
+            margin: auto;
+        }
+        .profile img {
+            height:100%;
+        }
     </style>
 </head>
 <body>
 <div class="main">
     <h1>Ben Yitzhaki</h1>
 
+    <div class="profile"><img src="profile.png" alt="Ben Yitzhaki" /></div>
+
     <footer>
         <a href="https://www.linkedin.com/in/benyitzhaki" target="_blank">LinkedIn</a> |
         <a href="https://github.com/benyitzhaki" target="_blank">github</a>
     </footer>
+
 
 </div>
 <!-- Google Analytics -->
@@ -31,5 +47,6 @@
     ga('create', 'UA-22202392-1', 'auto'); ga('send', 'pageview')
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+<script src="https://buttons.github.io/buttons.js" async defer></script>
 </body>
 </html>
