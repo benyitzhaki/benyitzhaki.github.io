@@ -2,12 +2,12 @@
 
 html, body {
     background: hsl(220, 70%, 30%);
+    overflow-x: hidden;
 }
 
 body {
     margin: 15px auto;
     text-align: center;
-    overflow-x: hidden;
 }
 
 header {
