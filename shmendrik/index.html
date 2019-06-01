@@ -79,8 +79,6 @@
 
         Splitting();
 
-
-
         // 2. This code loads the IFrame Player API code asynchronously.
         var tag = document.createElement('script');
 
@@ -108,6 +106,23 @@
             event.target.seekTo(13);
             event.target.playVideo();
         }
+
+        var played = false;
+        $('body').bind("click", function(){
+            if(!played) {
+                player.seekTo(13);
+                player.playVideo();
+                played = true;
+            }
+        });
+
+        setTimeout(100, function(){
+            if(!played) {
+                player.seekTo(13);
+                player.playVideo();
+                played = true;
+            }
+        });
 
         // 5. The API calls this function when the player's state changes.
         //    The function indicates that when playing a video (state=1),
