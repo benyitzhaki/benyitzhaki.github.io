@@ -119,11 +119,6 @@ img {
 }
 
 /* POLAROID IMAGES */
-@media screen and (max-width: 767px) {
-    .polaroids li:nth-child(n+5) {
-        display: none;
-    }
-}
 
 ul.polaroids li {
     display: block;
