@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Happy Birthday Mr.Lamar</title>
+    <link rel="stylesheet" href="reset.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="https://unpkg.com/splitting/dist/splitting.js"></script>
+</head>
+<body>
+
+    <header>
+        <img src="images/face.png" alt="we are rolling" class="rotate" />
+    </header>
+
+        <div class="title" data-splitting="lines">
+            HAPPY<br/>
+            BIRTHDAY
+        </div>
+
+    <p style="margin-bottom:25px;">
+        <img src="images/bracha.gif" alt="bracha"/>
+    </p>
+
+    <ul class="polaroids">
+        <li>
+            <a href="#"  onClick="return false;" title="השיח למאר. הגענו לגיל שהכל עובר לישיבה">
+                <img alt="" src="images/1.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#" onClick="return false;" title="שמנדריק בטיוליו באמריקה הרחוקה">
+                <img alt="" src="images/2.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#" onClick="return false;" title="זכייה חלקית בלוטו">
+                <img alt="" src="images/3.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#" onClick="return false;" title="חושב ששהוא יכול לעוף זה בלאט">
+                <img alt="" src="images/4.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#" onClick="return false;" title="התחלנו">
+                <img alt="" src="images/5.jpg">
+            </a>
+        </li>
+    </ul>
+
+    <video controls onclick="player.stopVideo()">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video. noob.
+    </video>
+
+
+    <p style="margin-bottom:25px;">
+        שמנדריק אח יקר, לעוד עשור של טימטום, דגש על ישיבות כי לעמוד כבר קשה ותמשיך לתת בראש
+    </p>
+
+
+    <iframe id="rolling" width="1" height="1" src="https://www.youtube.com/embed/CtwJvgPJ9xw?controls=0&amp;start=13&autoplay=1&enablejsapi=1"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
+
+    <script>
+
+        $('video').bind("click play", function(){
+            $("#rolling").remove();
+        });
+
+        Splitting();
+    </script>
+</body>
+</html>
