@@ -108,7 +108,7 @@
         }
 
         var played = false;
-        $('body').bind("click", function(){
+        $('body').bind("click touch touchstart", function(){
             if(!played) {
                 player.seekTo(13);
                 player.playVideo();
